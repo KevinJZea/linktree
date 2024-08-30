@@ -2,12 +2,13 @@
 interface Props {
   href: string;
   label: string;
+  target?: astroHTML.JSX.HTMLAttributeAnchorTarget | null;
 }
 
-const { href, label } = Astro.props
+const { href, label, target } = Astro.props
 ---
 
-<a class="link" href={href} target="_blank" rel="noopener noreferrer">
+<a class="link" href={href} target={target} rel="noopener noreferrer">
   {label}
 </a>
 
