@@ -1,0 +1,120 @@
+---
+import { Image } from "astro:assets";
+import NotFoundPage from "./404.astro"
+import ProfileLayout from "../layouts/ProfileLayout.astro";
+import Link from "../components/Link.astro";
+import { type User } from "../types/User";
+
+export const prerender = false;
+
+const { slug } = Astro.params;
+
+const response = await fetch(new URL("/api/users", Astro.url), {
+  method: "POST",
+  body: JSON.stringify({ slug }),
+});
+
+let userData;
+if (!response.ok || response.status >= 300 || !response.json) {
+  Astro.redirect("/404");
+} else {
+  userData = (await response.json()) as User;
+}
+
+---
+
+{!userData?.name ? (
+  <NotFoundPage />
+) : (
+  <ProfileLayout userData={userData}>
+    <div class="profile-container">
+      <Image alt="" class="profile-pic" src={`/Images/${userData.username}.webp`} height={160} width={160} />
+      <h1>{userData.name}</h1>
+      <p>{userData.description}</p>
+
+      <ul class="social-icons-container">
+        {Object.entries(userData.social).map(([platform, url]) => (
+          <li>
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              <Image
+                alt={`${userData.name}'s ${platform} account`}
+                class="social-icon"
+                src={`/svg/${platform}.svg`}
+                title={platform.charAt(0).toUpperCase() + platform.slice(1)}
+                height={40}
+                width={40}
+              />
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <ul class="links-container">
+        {userData.links.map((link) => (
+          <li>
+            <Link href={link.url} label={link.title} />
+          </li>
+        ))}
+      </ul>
+
+      <p class="thanks-message">{`Thanks for scrolling :)`}</p>
+
+      <p class="users-links">{userData.name}'s Links</p>
+
+      <div class="link-container">
+        <Link href="/" label="🏠 Go to Home" />
+      </div>
+    </div>
+  </ProfileLayout>
+)}
+<style>
+  .profile-container {
+    max-width: 580px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .profile-pic {
+    border-radius: 50%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .social-icons-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .links-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .social-icon:hover {
+    opacity: 0.8;
+  }
+
+  .thanks-message {
+    margin-top: 16px;
+    color: #777;
+    font-size: 14px;
+  }
+
+  .users-links {
+    font-weight: 600;
+  }
+
+  .link-container {
+    width: 100%;
+    max-width: 200px;
+  }
+</style>

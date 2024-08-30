@@ -1,0 +1,32 @@
+---
+interface Props {
+  href: string;
+  label: string;
+}
+
+const { href, label } = Astro.props
+---
+
+<a class="link" href={href} target="_blank" rel="noopener noreferrer">
+  {label}
+</a>
+
+<style>
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: rgb(30, 35, 47);
+    min-height: 4rem;
+    box-shadow: rgba(30, 35, 47, 0.24) 0px 2px 8px 0px;
+    border-radius: 30px;
+    text-decoration: none;
+  }
+  a:hover {
+    opacity: 0.8;
+  }
+</style>
