@@ -9,8 +9,8 @@ To get started with this project, follow these steps:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/linktree-clone.git
-   cd linktree-clone
+   git clone https://github.com/kevinjzea/linktree.git
+   cd linktree
    ```
 
 2. **Install Dependencies:**
@@ -32,8 +32,6 @@ To get started with this project, follow these steps:
    ```bash
    npm run build
    ```
-
-   The production-ready files will be generated in the `dist/` directory.
 
 ## Commands
 
