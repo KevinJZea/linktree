@@ -28,7 +28,14 @@ if (!response.ok || response.status >= 300 || !response.json) {
 ) : (
   <ProfileLayout userData={userData}>
     <div class="profile-container">
-      <Image alt="" class="profile-pic" src={`/Images/${userData.username}.webp`} height={160} width={160} />
+      <Image
+        alt=""
+        class="profile-pic"
+        loading="eager"
+        src={`/Images/${userData.username}.webp`}
+        height={160}
+        width={160}
+      />
       <h1>{userData.name}</h1>
       <p>{userData.description}</p>
 
@@ -39,6 +46,7 @@ if (!response.ok || response.status >= 300 || !response.json) {
               <Image
                 alt={`${userData.name}'s ${platform} account`}
                 class="social-icon"
+                loading="eager"
                 src={`/svg/${platform}.svg`}
                 title={platform.charAt(0).toUpperCase() + platform.slice(1)}
                 height={40}
@@ -52,7 +60,7 @@ if (!response.ok || response.status >= 300 || !response.json) {
       <ul class="links-container">
         {userData.links.map((link) => (
           <li>
-            <Link href={link.url} label={link.title} />
+            <Link href={link.url} label={link.title} target="_blank" />
           </li>
         ))}
       </ul>
@@ -80,6 +88,7 @@ if (!response.ok || response.status >= 300 || !response.json) {
 
   .profile-pic {
     border-radius: 50%;
+    object-fit: cover;
   }
 
   h1 {
@@ -89,6 +98,8 @@ if (!response.ok || response.status >= 300 || !response.json) {
   .social-icons-container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
   }
 

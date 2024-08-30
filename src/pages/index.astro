@@ -17,7 +17,7 @@ const users = await response.json() as User[];
   <main>
     <div class="container">
       <section>
-        <h2>Most popular Linkers</h2>
+        <h2>Our most popular Linkers</h2>
         <div class="linkers-container">
           {users.map(user => (
               <a class="user-link" href={`/${user.username}`}>
