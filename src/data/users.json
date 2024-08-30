@@ -1,0 +1,219 @@
+[
+  {
+    "name": "Morgan Lee",
+    "username": "morganlee",
+    "description": "Blockchain developer specializing in smart contracts and decentralized applications.",
+    "social": {
+      "facebook": "https://facebook.com/kevinjzea",
+      "reddit": "https://reddit.com/kevinjzea",
+      "linkedin": "https://linkedin.com/in/kevinjzea",
+      "instagram": "https://instagram.com/kevinjzea",
+      "pinterest": "https://pinterest.com/kevinjzea",
+      "x": "https://x.com/kevinjzea",
+      "youtube": "https://youtube.com/kevinjzea"
+    },
+    "links": [
+      {
+        "title": "Blockchain Projects",
+        "url": "https://morganleeblockchain.com"
+      },
+      { "title": "GitHub Repositories", "url": "https://github.com/morganlee" },
+      { "title": "Smart Contract Guide", "url": "https://morganleesmarts.com" },
+      {
+        "title": "Solidity Tutorials",
+        "url": "https://solidity.dev/morganlee"
+      },
+      {
+        "title": "Decentralized Finance (DeFi)",
+        "url": "https://morganleedefi.com"
+      },
+      {
+        "title": "Crypto Development Resources",
+        "url": "https://morganleeresources.com"
+      }
+    ]
+  },
+  {
+    "name": "Kevin J. Zea",
+    "username": "kevinjzea",
+    "description": "Front-End Developer crafting responsive, intuitive web interfaces.",
+    "social": {
+      "instagram": "https://instagram.com/kevinjzea",
+      "x": "https://x.com/kevinjzea",
+      "linkedin": "https://linkedin.com/in/kevinjzea",
+      "pinterest": "https://pinterest.com/kevinjzea",
+      "youtube": "https://youtube.com/kevinjzea",
+      "facebook": "https://facebook.com/kevinjzea"
+    },
+    "links": [
+      { "title": "🌎 My Website", "url": "https://kevinjzea.com" },
+      { "title": "🐙 GitHub", "url": "https://github.com/kevinjzea" },
+      {
+        "title": "✉️ Contact me via email",
+        "url": "mailto:kevinjzea@gmail.com"
+      }
+    ]
+  },
+  {
+    "name": "Lucas Harris",
+    "username": "lucasharris",
+    "description": "NFT creator and digital art specialist with a focus on blockchain-based art.",
+    "social": {
+      "youtube": "https://youtube.com/lucasharris",
+      "instagram": "https://instagram.com/lucasharris",
+      "facebook": "https://facebook.com/lucasharris",
+      "x": "https://x.com/lucasharris",
+      "linkedin": "https://linkedin.com/in/lucasharris"
+    },
+    "links": [
+      { "title": "NFT Portfolio", "url": "https://lucasharrisart.com" },
+      { "title": "OpenSea Profile", "url": "https://opensea.io/lucasharris" },
+      { "title": "Rarible Profile", "url": "https://rarible.com/lucasharris" },
+      {
+        "title": "Foundation Profile",
+        "url": "https://foundation.app/lucasharris"
+      },
+      { "title": "Zora Profile", "url": "https://zora.co/lucasharris" },
+      {
+        "title": "Nifty Gateway Profile",
+        "url": "https://niftygateway.com/lucasharris"
+      }
+    ]
+  },
+  {
+    "name": "Jane Smith",
+    "username": "janesmith",
+    "description": "Financial advisor with expertise in personal finance and investment strategies.",
+    "social": {
+      "linkedin": "https://linkedin.com/in/janesmith",
+      "youtube": "https://youtube.com/janesmith",
+      "x": "https://x.com/janesmith",
+      "pinterest": "https://pinterest.com/janesmith",
+      "reddit": "https://reddit.com/janesmith",
+      "instagram": "https://instagram.com/janesmith"
+    },
+    "links": [
+      { "title": "💰 Financial Blog", "url": "https://janesmithfinance.com" },
+      {
+        "title": "Personal Finance Guide",
+        "url": "https://janesmithguide.com"
+      },
+      { "title": "Tax Advice", "url": "https://janesmithtax.com" },
+      {
+        "title": "Retirement Planning",
+        "url": "https://janesmithretirement.com"
+      },
+      { "title": "Wealth Management", "url": "https://janesmithwealth.com" },
+      { "title": "📈 Market Analysis", "url": "https://janesmithmarket.com" },
+      {
+        "title": "🌱 Investment Portfolio",
+        "url": "https://janesmithportfolio.com"
+      }
+    ]
+  },
+  {
+    "name": "James Wilson",
+    "username": "jameswilson",
+    "description": "Full-stack developer with experience in web applications and databases.",
+    "social": {
+      "facebook": "https://facebook.com/jameswilson",
+      "linkedin": "https://linkedin.com/in/jameswilson",
+      "x": "https://x.com/jameswilson",
+      "pinterest": "https://pinterest.com/jameswilson"
+    },
+    "links": [
+      { "title": "💻 Dev Blog", "url": "https://jameswilsondev.com" },
+      { "title": "GitHub Projects", "url": "https://github.com/jameswilson" },
+      { "title": "CodePen", "url": "https://codepen.io/jameswilson" },
+      { "title": "Send me an e-mail ✉️", "url": "mailto:jameswilson@gmail.com" }
+    ]
+  },
+  {
+    "name": "Olivia Martinez",
+    "username": "oliviamartinez",
+    "description": "Social media strategist with a focus on brand growth and engagement.",
+    "social": {
+      "x": "https://x.com/oliviamartinez",
+      "linkedin": "https://linkedin.com/in/oliviamartinez",
+      "pinterest": "https://pinterest.com/oliviamartinez"
+    },
+    "links": [
+      { "title": "My Webiste", "url": "https://oliviamartinez.com" },
+      {
+        "title": "Social Media Insights",
+        "url": "https://social.oliviamartinez.com"
+      },
+      {
+        "title": "📝 LinkedIn Articles",
+        "url": "https://linkedin.com/in/oliviamartinez/articles"
+      },
+      {
+        "title": "Got a question or just want to chat?\nReach me at oliviamartinez@gmail.com",
+        "url": "mailto:oliviamartinez@gmail.com"
+      }
+    ]
+  },
+  {
+    "name": "Liam Anderson",
+    "username": "liamanderson",
+    "description": "Cybersecurity expert with a background in network security and threat analysis.",
+    "social": {
+      "x": "https://x.com/liamanderson",
+      "linkedin": "https://linkedin.com/in/liamanderson"
+    },
+    "links": [
+      {
+        "title": "🔐 Security Blog",
+        "url": "https://liamandersonsecurity.com"
+      },
+      { "title": "🐙 GitHub", "url": "https://github.com/liamanderson" },
+      {
+        "title": "🔎 Research Publications",
+        "url": "https://liamandersonresearch.com"
+      }
+    ]
+  },
+  {
+    "name": "Mia Thompson",
+    "username": "miathompson",
+    "description": "UX researcher and consultant specializing in user experience and usability testing.",
+    "social": {
+      "x": "https://x.com/miathompson",
+      "linkedin": "https://linkedin.com/in/miathompson"
+    },
+    "links": [
+      { "title": "UX Research", "url": "https://miathompsonux.com" },
+      { "title": "📚 Medium", "url": "https://medium.com/@miathompson" },
+      {
+        "title": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=miathompson"
+      },
+      {
+        "title": "Have something to share? Email me!",
+        "url": "mailto:miathompson@gmail.com"
+      }
+    ]
+  },
+  {
+    "name": "Ava White",
+    "username": "avawhite",
+    "description": "Data scientist specializing in machine learning and statistical analysis.",
+    "social": {
+      "x": "https://x.com/avawhite",
+      "instagram": "https://instagram.com/avawhite",
+      "linkedin": "https://linkedin.com/in/avawhite",
+      "facebook": "https://facebook.com/avawhite",
+      "youtube": "https://youtube.com/avawhite",
+      "reddit": "https://reddit.com/avawhite"
+    },
+    "links": [
+      { "title": "🔬 Data Science Blog", "url": "https://avawhitedata.com" },
+      { "title": "🐙 GitHub", "url": "https://github.com/avawhite" },
+      { "title": "Kaggle", "url": "https://kaggle.com/avawhite" },
+      {
+        "title": "I'd love to hear from you! Contact me via email",
+        "url": "mailto:avawhite@gmail.com"
+      }
+    ]
+  }
+]
