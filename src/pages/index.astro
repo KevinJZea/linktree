@@ -1,7 +1,14 @@
 ---
+import Card from '../components/Card.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
+import type { User } from '../types/User';
+
+export const prerender = false
+
+const response = await fetch(new URL("/api/users", Astro.url))
+const users = await response.json() as User[];
 ---
 
 <Layout title="Linktree Clone">
@@ -9,7 +16,17 @@ import Layout from '../layouts/Layout.astro';
 
   <main>
     <div class="container">
-      <h2>Most popular Linkers</h2>
+      <section>
+        <h2>Most popular Linkers</h2>
+        <div class="linkers-container">
+          {users.map(user => (
+              <a class="user-link" href={`/${user.username}`}>
+                <Card userData={user} />
+              </a>
+            ))
+          }
+        </div>
+      </section>
     </div>
   </main>
 
@@ -19,12 +36,38 @@ import Layout from '../layouts/Layout.astro';
 <style>
   main {
     flex: 1;
-    padding: 1rem 1.5rem;
+    padding: 1rem;
+  }
+
+  .linkers-container {
+    padding: 24px 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    column-gap: 12px;
+    row-gap: 16px;
+  }
+  
+  .user-link {
+    display: block;
+    border-radius: 6px;
+    align-self: stretch;
+    height: 100%;
+    text-decoration: none;
+  }
+  .user-link:hover {
+    box-shadow: rgba(30, 35, 47, 0.24) 0px 2px 6px 0px;
   }
 
   @media (min-width: 640px) {
     main {
       padding: 1rem 2.5rem;
+    }
+    .linkers-container {
+      padding: 32px;
+      gap: 20px;
     }
   }
 </style>
