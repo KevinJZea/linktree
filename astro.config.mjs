@@ -5,4 +5,5 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   output: "hybrid",
   adapter: vercel(),
+  site: "https://linktree.kevinjzea.com",
 });
