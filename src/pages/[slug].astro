@@ -26,6 +26,7 @@ export async function getStaticPaths() {
           class="profile-pic"
           loading="eager"
           src={`/Images/${user.username}.webp`}
+          transition:name={`image-${user.username}`}
           height={160}
           width={160}
         />
