@@ -16,6 +16,7 @@ const { userData } = Astro.props;
       class="profile-pic"
       loading="eager"
       src={`/Images/${userData.username}.webp`}
+      transition:name={`image-${userData.username}`}
       height={320}
       width={320}
     />
