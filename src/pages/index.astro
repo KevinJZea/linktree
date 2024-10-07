@@ -1,14 +1,9 @@
 ---
-import Card from '../components/Card.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import Layout from '../layouts/Layout.astro';
-import type { User } from '../types/User';
-
-export const prerender = false
-
-const response = await fetch(new URL("/api/users", Astro.url))
-const users = await response.json() as User[];
+import Card from "../components/Card.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import users from "../data/users.json";
 ---
 
 <Layout title="Linktree Clone">
@@ -19,7 +14,8 @@ const users = await response.json() as User[];
       <section>
         <h2>Our most popular Linkers</h2>
         <div class="linkers-container">
-          {users.map(user => (
+          {
+            users.map((user) => (
               <a class="user-link" href={`/${user.username}`}>
                 <Card userData={user} />
               </a>
@@ -49,7 +45,7 @@ const users = await response.json() as User[];
     column-gap: 12px;
     row-gap: 16px;
   }
-  
+
   .user-link {
     display: block;
     border-radius: 6px;
